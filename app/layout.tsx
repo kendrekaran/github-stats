@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: "Create beautiful GitHub stats cards and share your coding journey.",
     images: ["/ogimage.png"],
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://gitwrap-card.vercel.app"),
 };
 
 export default function RootLayout({
