@@ -42,6 +42,10 @@ export default function GithubStatsCard() {
       <div className="min-h-screen bg-[#F3EFE0] flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 font-sans text-[#0f0f0f] relative">
         <div className='w-full max-w-md mx-auto'>
           {!stats && (
+            <div className='flex flex-col items-center justify-center gap-12' >
+            <h1 className='text-center text-2xl sm:text-4xl font-bold'>
+            Github Wrapped Card
+            </h1>
             <SearchBar
               username={username}
               setUsername={setUsername}
@@ -49,6 +53,7 @@ export default function GithubStatsCard() {
               loading={loading}
               hasStats={false}
             />
+            </div>
           )}
 
           {error && (
